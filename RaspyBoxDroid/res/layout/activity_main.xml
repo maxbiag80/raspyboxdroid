@@ -114,4 +114,14 @@
         android:text="@string/device"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
+    <TextView
+        android:id="@+id/lblIpAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblDevice4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Raspberry PI - IP Address"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
 </RelativeLayout>
