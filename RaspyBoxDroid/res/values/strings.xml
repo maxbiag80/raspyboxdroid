@@ -13,5 +13,7 @@
     <string name="summary_ip_address">Inserire indirizzo IP del Raspberry PI</string>
     <string name="raspberrypi_address">Indirizzo IP Raspberry PI</string>
     <string name="raspberrypi_missing_address">Inserire indirizo IP Raspberry PI</string>
+    <string name="port">Porta</string>
+    <string name="summary_port">Porta su cui gira il servizio</string>
 
 </resources>

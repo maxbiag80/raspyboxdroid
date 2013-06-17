@@ -7,5 +7,9 @@
 	    	android:key="ip_address"
 	     	android:summary="@string/summary_ip_address"
 	     	android:title="@string/ip_address" />
+		<EditTextPreference
+	    	android:key="port"
+	     	android:summary="@string/summary_port"
+	     	android:title="@string/port" />
 	</PreferenceCategory>
 </PreferenceScreen>

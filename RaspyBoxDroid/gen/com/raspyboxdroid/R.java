@@ -53,10 +53,12 @@ public final class R {
         public static final int device=0x7f060003;
         public static final int hello_world=0x7f060002;
         public static final int ip_address=0x7f060008;
+        public static final int port=0x7f06000c;
         public static final int raspberrypi_address=0x7f06000a;
         public static final int raspberrypi_info=0x7f060007;
         public static final int raspberrypi_missing_address=0x7f06000b;
         public static final int summary_ip_address=0x7f060009;
+        public static final int summary_port=0x7f06000d;
         public static final int title_activity_settings=0x7f060006;
     }
     public static final class style {
