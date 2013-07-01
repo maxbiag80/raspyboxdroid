@@ -24,20 +24,21 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000d;
-        public static final int btnOffDevice1=0x7f090001;
-        public static final int btnOffDevice2=0x7f090004;
-        public static final int btnOffDevice3=0x7f090006;
-        public static final int btnOffDevice4=0x7f090008;
-        public static final int btnOnDevice1=0x7f090000;
-        public static final int btnOnDevice2=0x7f090003;
-        public static final int btnOnDevice3=0x7f090005;
-        public static final int btnOnDevice4=0x7f090007;
-        public static final int lblDevice1=0x7f090002;
-        public static final int lblDevice2=0x7f090009;
-        public static final int lblDevice3=0x7f09000a;
-        public static final int lblDevice4=0x7f09000b;
-        public static final int lblIpAddress=0x7f09000c;
+        public static final int action_settings=0x7f09000e;
+        public static final int lblDevice1=0x7f090003;
+        public static final int lblDevice2=0x7f090006;
+        public static final int lblDevice3=0x7f090009;
+        public static final int lblDevice4=0x7f09000c;
+        public static final int lblIpAddress=0x7f090000;
+        public static final int tableLayout1=0x7f090001;
+        public static final int tableRow1=0x7f090002;
+        public static final int tableRow2=0x7f090005;
+        public static final int tableRow3=0x7f090008;
+        public static final int tableRow4=0x7f09000b;
+        public static final int tglDevice1=0x7f090004;
+        public static final int tglDevice2=0x7f090007;
+        public static final int tglDevice3=0x7f09000a;
+        public static final int tglDevice4=0x7f09000d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

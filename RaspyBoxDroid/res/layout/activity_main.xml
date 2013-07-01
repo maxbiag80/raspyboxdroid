@@ -8,120 +8,105 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/btnOnDevice1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/btnOffDevice1"
-        android:text="@string/On" />
-
-    <TextView
-        android:id="@+id/lblDevice1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOnDevice1"
-        android:layout_alignBottom="@+id/btnOnDevice1"
-        android:text="@string/device"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <Button
-        android:id="@+id/btnOnDevice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnOnDevice1"
-        android:layout_toLeftOf="@+id/btnOffDevice1"
-        android:text="@string/On" />
-
-    <Button
-        android:id="@+id/btnOffDevice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnOnDevice1"
-        android:layout_toRightOf="@+id/btnOnDevice1"
-        android:text="@string/Off" />
-
-    <Button
-        android:id="@+id/btnOnDevice3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnOnDevice2"
-        android:layout_toLeftOf="@+id/btnOffDevice2"
-        android:text="@string/On" />
-
-    <Button
-        android:id="@+id/btnOffDevice3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOnDevice3"
-        android:layout_alignBottom="@+id/btnOnDevice3"
-        android:layout_alignLeft="@+id/btnOffDevice2"
-        android:text="@string/Off" />
-
-    <Button
-        android:id="@+id/btnOffDevice1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOnDevice1"
-        android:layout_alignBottom="@+id/btnOnDevice1"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="28dp"
-        android:text="@string/Off" />
-
-    <Button
-        android:id="@+id/btnOnDevice4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnOnDevice3"
-        android:layout_below="@+id/btnOnDevice3"
-        android:text="@string/On" />
-
-    <Button
-        android:id="@+id/btnOffDevice4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOnDevice4"
-        android:layout_alignBottom="@+id/btnOnDevice4"
-        android:layout_alignLeft="@+id/btnOffDevice3"
-        android:text="@string/Off" />
-
-    <TextView
-        android:id="@+id/lblDevice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOnDevice2"
-        android:layout_alignBottom="@+id/btnOnDevice2"
-        android:layout_alignLeft="@+id/lblDevice1"
-        android:text="@string/device"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/lblDevice3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOnDevice3"
-        android:layout_alignBottom="@+id/btnOnDevice3"
-        android:layout_alignLeft="@+id/lblDevice2"
-        android:text="@string/device"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/lblDevice4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnOnDevice4"
-        android:layout_alignBottom="@+id/btnOnDevice4"
-        android:layout_alignLeft="@+id/lblDevice3"
-        android:text="@string/device"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
     <TextView
         android:id="@+id/lblIpAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/lblDevice4"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:text="Raspberry PI - IP Address"
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+		        android:id="@+id/lblDevice1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/device"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ToggleButton
+                android:id="@+id/tglDevice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="72dp"                
+                android:text="ToggleButton" />
+            
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    
+       	    <TextView
+	            android:id="@+id/lblDevice2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/device"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />     
+	            
+       	    <ToggleButton
+		        android:id="@+id/tglDevice2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		        
+		        android:layout_marginBottom="12dp"
+		        android:layout_marginLeft="72dp"		        
+		        android:text="ToggleButton" />       	    
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+       	    
+       	    <TextView
+	            android:id="@+id/lblDevice3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/device"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />            
+            
+       	    <ToggleButton
+		        android:id="@+id/tglDevice3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		        
+		        android:layout_marginBottom="12dp"
+		        android:layout_marginLeft="72dp"		       
+		        android:text="ToggleButton" /> 	    
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+       	    
+            <TextView
+	            android:id="@+id/lblDevice4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/device"
+	            android:textAppearance="?android:attr/textAppearanceSmall" /> 
+	            
+            <ToggleButton
+		        android:id="@+id/tglDevice4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		        
+		        android:layout_marginBottom="12dp"
+		        android:layout_marginLeft="72dp"		        
+		        android:text="ToggleButton" />
+        </TableRow>
+    </TableLayout>    
 
 </RelativeLayout>
